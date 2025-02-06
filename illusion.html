@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illusion</title>
+    <style>
+        .square{
+  width: 80vmin;
+  height: 80vmin;
+  --color1: black;
+  --color2: white;
+  background: 
+    var(--s2) 11.5% 11.5%, var(--s1)  12.5%  12.5%,
+    var(--c1) 29.0% 29.0%, var(--s1)  30.0%  30.0%,
+    var(--c2) 46.5% 46.5%, var(--s1)  47.5%  47.5%,
+    var(--c3) 64.0% 64.0%, var(--s1)  65.0%  65.0%,
+    var(--c2) 81.5% 81.5%, var(--s1)  82.5%  82.5%,
+    var(--c1) 99.0% 99.0%, var(--s1) 100.0% 100.0%;
+  background-repeat: no-repeat;
+  --c: var(--color1) 0 15deg, var(--color2) 15deg 30deg;
+  --c1: repeating-conic-gradient(from   0.0deg, var(--c)) 50% /;
+  --c2: repeating-conic-gradient(from  -7.5deg, var(--c)) 50% /;
+  --c3: repeating-conic-gradient(from -15.0deg, var(--c)) 50% /;
+  --s1: linear-gradient(var(--color1) 0 0) 50% /;
+  --s2: linear-gradient(var(--color2) 0 0) 50% /;
+}
+
+body { margin: 0; height: 100vh; display: grid; place-items: center }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html>
